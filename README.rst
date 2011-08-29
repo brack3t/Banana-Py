@@ -37,7 +37,7 @@ Then add the following four settings to your ``settings.py``::
     MAILCHIMP_REDIRECT_URI = 'http://your-domain.com/bananas/ripe/'
     MAILCHIMP_COMPLETE_URI = 'http://your-domain.com/'
 
-The last setting, ``MAILCHIMP_COMPLETE_URI`` can be anything you want, a Profile page or some view of your own that create 
+The last setting, ``MAILCHIMP_COMPLETE_URI`` can be anything you want, a Profile page or some view of your own that creates
 a user account for the new user.
 
 Add URLs entries::
