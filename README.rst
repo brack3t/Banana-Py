@@ -20,13 +20,16 @@ Let everything install and then set up your MailChimp app. Set the ``redirect ur
 
     http://your-domain.com/bananas/ripe/
 
-Then add the following four settings to your ``settings.py``::
+
+Add ``banana_py`` to your ``INSTALLED_APPS``::
 
     INSTALLED_APPS = (
         ...
         'banana_py',
         ...
     )
+
+Then add the following four settings to your ``settings.py``::
 
     MAILCHIMP_CLIENT_ID = '123456789'
     MAILCHIMP_CLIENT_SECRET = 'a1b2c3d4e5f6789'
