@@ -1,7 +1,7 @@
 """
 BananaPy provides you with a way to authenticate your Django application with MailChimp's new OAuth2 service.
 """
-version = (0, 1, 0)
+version = (0, 1, 1)
 __version__ = '.'.join(map(str, version))
 
 
