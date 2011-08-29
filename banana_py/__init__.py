@@ -48,3 +48,7 @@ class Bananas_OAuth(object):
         response.update(simplejson.loads(content))
 
         return response
+
+    def authorize_url(self):
+        return u'%s?response_type=code&client_id=%s&redirect_uri=%s' % (
+            self.mc_authorize_uri, self.client_id, urlencode(self.redirect_uri))

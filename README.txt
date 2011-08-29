@@ -28,6 +28,13 @@ Then add the following four settings to your ``settings.py``::
 
 The last setting, ``MAILCHIMP_COMPLET_URI`` can be anything you want, a Profile page or some view of your own that create a user account for the new user. 
 
+In the template(s) where you want to display the authorize link::
+
+    {% load banana_tags %}
+    {% banana_auth_url "Authorize" %}
+
+This will print out an HTML anchor tag with the appropriate link and the supplied text as the link text.
+
 
 Thanks
 ======
