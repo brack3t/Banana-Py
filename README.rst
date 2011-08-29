@@ -8,7 +8,8 @@ Installation and Usage
 ======================
 
 BananaPy requires ``Python-OAuth2`` from SimpleGeo and the ``simplejson`` library, both of which should be installed
-automatically if not already installed. You can get BananaPy from its `Github repo <https://github.com/kennethlove/Banana-Py/>` or through PyPi by::
+automatically if not already installed. You can get BananaPy from its `Github repo <https://github.com/kennethlove/Banana-Py/>`_ 
+or through PyPi by::
 
     easy_install banana_py
 
