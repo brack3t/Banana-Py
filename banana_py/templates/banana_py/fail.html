@@ -1,0 +1,7 @@
+{% if error %}
+<h1>Oh snap, there was an error.</h1>
+<p>Error details: {{ error }}</p>
+{% else %}
+<h1>Hrm, we received an auth code: , but were unable to retrieve the access_token</h1>
+<p>This likely means that you waited too long to exchange your code for an access token or you are being awesome and checking to see this failure occur.</p>
+{% endif %}
