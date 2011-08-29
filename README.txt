@@ -22,12 +22,26 @@ Let everything install and then set up your MailChimp app. Set the ``redirect ur
 
 Then add the following four settings to your ``settings.py``::
 
+    INSTALLED_APPS = (
+        ...
+        'banana_py',
+        ...
+    )
+
     MAILCHIMP_CLIENT_ID = '123456789'
     MAILCHIMP_CLIENT_SECRET = 'a1b2c3d4e5f6789'
     MAILCHIMP_REDIRECT_URI = 'http://your-domain.com/bananas/ripe/'
     MAILCHIMP_COMPLETE_URI = 'http://your-domain.com/'
 
 The last setting, ``MAILCHIMP_COMPLETE_URI`` can be anything you want, a Profile page or some view of your own that create a user account for the new user. 
+
+Add URLs entries:
+
+    urlpatterns = patterns('',
+        ...
+        url(r'', include('banana_py.urls')),
+        ...
+    )
 
 In the template(s) where you want to display the authorize link::
 
