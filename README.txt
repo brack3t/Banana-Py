@@ -7,7 +7,8 @@ BananaPy provides you with a way to authenticate your Django application with Ma
 Installation and Usage
 ======================
 
-BananaPy requires ``Python-OAuth2`` from SimpleGeo and the ``simplejson`` library, both of which should be installed automatically if not already installed. You can get BananaPy from it's `Github repo <link here>` or through PyPi by::
+BananaPy requires ``Python-OAuth2`` from SimpleGeo and the ``simplejson`` library, both of which should be installed
+automatically if not already installed. You can get BananaPy from its `Github repo <https://github.com/kennethlove/Banana-Py/>` or through PyPi by::
 
     easy_install banana_py
 
@@ -26,7 +27,7 @@ Then add the following four settings to your ``settings.py``::
     MAILCHIMP_REDIRECT_URI = 'http://your-domain.com/bananas/ripe/'
     MAILCHIMP_COMPLETE_URI = 'http://your-domain.com/'
 
-The last setting, ``MAILCHIMP_COMPLET_URI`` can be anything you want, a Profile page or some view of your own that create a user account for the new user. 
+The last setting, ``MAILCHIMP_COMPLETE_URI`` can be anything you want, a Profile page or some view of your own that create a user account for the new user. 
 
 In the template(s) where you want to display the authorize link::
 
@@ -34,6 +35,9 @@ In the template(s) where you want to display the authorize link::
     {% banana_auth_url "Authorize" %}
 
 This will print out an HTML anchor tag with the appropriate link and the supplied text as the link text.
+
+Once the user completes the authorization workflow (and ends up on your ``MAILCHIMP_COMPLETE_URI`` view), their
+MailChimp-provided authorization information will be available in the ``request.session`` object as ``mailchimp_details``.
 
 
 Thanks
