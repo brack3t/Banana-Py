@@ -1,8 +1,8 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='banana_py',
-    version='0.1.1',
+    version='0.1.2',
     description='OAuth2 Backend for MailChimp',
     long_description='',
     keywords='django, mailchimp, oauth2',
@@ -10,7 +10,7 @@ setup(
     author_email='kenneth@gigantuan.net',
     url='https://github.com/kennethlove/Banana-Py/',
     license='BSD',
-    packages=find_packages(),
+    packages=['banana_py'],
     zip_safe=False,
     install_requires=['oauth2', 'simplejson', 'django'],
     include_package_data=True,

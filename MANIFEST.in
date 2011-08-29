@@ -1,0 +1,2 @@
+include README.rst
+recursive-include banana_py/templates/banana_py *.html
